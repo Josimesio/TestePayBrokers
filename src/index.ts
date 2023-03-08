@@ -1,3 +1,8 @@
 import {server} from './server/Server';
 
-server.listen(3333,() => console.log('API Rondando!') );
+
+server.listen(process.env.PORT || 3333,() => {
+  console.log(`API Rondando na porta ${process.env.PORT || 3333} `);
+
+
+});
