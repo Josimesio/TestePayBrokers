@@ -10,9 +10,8 @@ router.get('/', ( _, res ) =>{
 });
 
 router.post(
-  '/produto_api_A',
-  ProdutoControlers.createBodyValidator, 
+  '/produto_api_A', 
+  ProdutoControlers.createValidation, 
   ProdutoControlers.create);
-
 
 export {router};
