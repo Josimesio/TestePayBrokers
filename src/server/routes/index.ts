@@ -9,7 +9,10 @@ router.get('/', ( _, res ) =>{
   return res.send('API Funcionando!');
 });
 
-router.post('/produto_api_A', ProdutoControlers.create);
+router.post(
+  '/produto_api_A',
+  ProdutoControlers.createBodyValidator, 
+  ProdutoControlers.create);
 
 
 export {router};
