@@ -4,11 +4,13 @@ import * as yup from 'yup';
 
 import { validation } from '../../shared/middleware/validation';
 
-interface IProduto {id: number;Nome: string;Descricao: string;Valor:number; 
+interface IProduto {
+  Nome: string;
+  Descricao: string;
+  Valor:number; 
 }
 export const createValidation = validation((getSchema) => ({
   body: getSchema<IProduto>(yup.object().shape({
-    id: yup.number().required().positive().integer(),
     Nome: yup.string().required(),
     Descricao: yup.string().required(),
     Valor:yup.number().required(), 
