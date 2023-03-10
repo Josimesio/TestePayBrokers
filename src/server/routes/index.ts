@@ -1,17 +1,14 @@
 import { Router } from 'express';
-import { StatusCodes} from 'http-status-codes';
-
-import { ProdutoControlers } from './../controllers';
+import { ProdutoController } from './../controllers';
 
 const router = Router();
 
-router.get('/', ( _, res ) =>{
-  return res.send('API Funcionando!');
+router.get('/', (_, res) => {
+  return res.send('Olá, DEV!');
 });
 
-router.post(
-  '/produto_api_A', 
-  ProdutoControlers.createValidation, 
-  ProdutoControlers.create);
+/*router.get('/produto_api_A', ProdutoController.getAllValidation, ProdutoController.getAll);*/
+router.post('/produto_api_A', ProdutoController.createValidation, ProdutoController.create);
 
-export {router};
+export { router };
+

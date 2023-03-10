@@ -1,7 +1,8 @@
-import * as create  from './Create';
+import * as create from './Create';
+import * as getAll from './GelAll';
 
 
-export const ProdutoControlers= {
+export const ProdutoController = {
   ...create,
-
+  ...getAll,
 };
