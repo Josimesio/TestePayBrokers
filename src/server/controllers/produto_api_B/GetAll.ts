@@ -26,8 +26,7 @@ export const getAll = async (req: Request<{}, {}, {}, IQueryProps>, res: Respons
     {
       id: 1,
       Nome: 'Café',
-      Descricao:'500GR',
-      Valor: 14.99,
+      Descricao: '500GR'
     }
   ]);
 };
