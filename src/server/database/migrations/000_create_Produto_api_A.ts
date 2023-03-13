@@ -1,6 +1,6 @@
-import { Knex } from 'knex';
+/*import { Knex } from 'knex';
 
-import { ETableNames } from '../ETableNames';
+import { ETableNames } from '../ETableName';
 
 
 export async function up(knex: Knex) {
@@ -27,4 +27,4 @@ export async function down(knex: Knex) {
     .then(() => {
       console.log(`# Dropped table ${ETableNames.Produto_api_A}`);
     });
-}
+}*/
